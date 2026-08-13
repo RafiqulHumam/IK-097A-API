@@ -1,0 +1,13 @@
+@RaF_HostAddress = http://localhost:5283
+
+#if (EnableOpenAPI)
+GET {{RaF_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+###
+#endif
+
+GET {{RaF_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
